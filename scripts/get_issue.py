@@ -22,4 +22,3 @@ response = requests.get(
 print((response.text))
 print(json.dumps(json.loads(response.text), sort_keys=True, indent=4, separators=(",", ": ")))
 # print(json.dumps(json.loads(str(response.json)), sort_keys=True, indent=4, separators=(",", ": ")))
-
