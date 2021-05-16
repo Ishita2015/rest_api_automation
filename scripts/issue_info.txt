@@ -1,0 +1,7 @@
+Issue description: Functionality or a feature expressed as a user goal.
+Issue Type: Story
+Assignee: ishita.nigam@outlook.com
+Reporter: ishita.nigam@outlook.com
+Sprint: APIAUTO Sprint 1
+Priority: Medium
+Status: In Progress
