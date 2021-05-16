@@ -18,6 +18,6 @@ Phase-1 - To be completed by EOD 05/14
 4. Move the end-point URI from get_issue.py to a file where constants can be stored at a later point of time
 5. Write unit tests to test all sorts of end-points
 
-<<<<<<< HEAD
+
 Note: Authentication details are right now exposed as plain-text in the code. This is bad security practice. Explore on ways to hide this from the code.
->>>>>>> 14aaf33edddf79bf289552c592074cbda203684c
+
