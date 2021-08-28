@@ -1,12 +1,27 @@
 import requests
 import json
 
-
 class RESTClientUtil:
+    
     def get(self, GET_URL, headers, auth):
-        response = requests.get(url=GET_URL, headers=headers, auth=auth)
+        response = None
+        try:
+            response = requests.get(url=GET_URL, headers=headers, auth=auth)
+        except re.HTTPError as error:
+            # TODO: Replace all print statements with logger
+            print('Error!!', error, sep='\n')
+        except re.ConnectionError as error:
+            print('Connection Error!!', error, sep='\n')
+        except re.InvalidURL as error:
+            print('Error!!', error, sep='\n')
+        except re.Timeout as error:
+            print('Error!!', error, sep='\n')
+        except re.RequestException as error:
+            print('Error!!', error, sep='\n')
+        
         return response
 
+    # TODO: Do not make it member variable
     payload_post_data = json.dumps({
 
                 "fields": {
