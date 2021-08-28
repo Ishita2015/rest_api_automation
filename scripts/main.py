@@ -12,7 +12,7 @@ if __name__ == '__main__':
         data = response_get.json()
         # writing issue data into a file
         with open('issue_info.txt', 'w') as file:
-            file. write('Issue description: ' + data['fields']['issuetype']['description'] + '\n')
+            file.write('Issue description: ' + data['fields']['issuetype']['description'] + '\n')
             file.write('Issue Type: ' + data['fields']['issuetype']['name'] + '\n')
             file.write('Assignee: ' + data['fields']['assignee']['emailAddress'] + '\n')
             file.write('Reporter: ' + data['fields']['reporter']['emailAddress'] + '\n')
