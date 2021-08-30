@@ -1,4 +1,5 @@
 from requests.auth import HTTPBasicAuth
+import os
 
 TEST_END_POINT = "https://ishitanigam.atlassian.net/rest/api/2/issue/"
 GET_URL = "https://ishitanigam.atlassian.net/rest/api/2/issue/APIAUTO-1"
